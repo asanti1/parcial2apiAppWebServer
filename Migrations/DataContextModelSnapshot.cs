@@ -22,7 +22,7 @@ namespace segParAgustinSantinaqueApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Parcial2AgustinSantinaqueWebApi.Dal.Entities.Cancion", b =>
+            modelBuilder.Entity("segParAgustinSantinaqueApi.Dal.Entities.Cancion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -88,10 +88,108 @@ namespace segParAgustinSantinaqueApi.Migrations
                             DiscoId = 3,
                             TiempoDuracion = 900,
                             TituloCancion = "Black Dog"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            DiscoId = 4,
+                            TiempoDuracion = 384,
+                            TituloCancion = "Money"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            DiscoId = 4,
+                            TiempoDuracion = 416,
+                            TituloCancion = "Time"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            DiscoId = 5,
+                            TiempoDuracion = 220,
+                            TituloCancion = "Go Your Own Way"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            DiscoId = 5,
+                            TiempoDuracion = 257,
+                            TituloCancion = "Dreams"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            DiscoId = 6,
+                            TiempoDuracion = 391,
+                            TituloCancion = "Hotel California"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            DiscoId = 6,
+                            TiempoDuracion = 286,
+                            TituloCancion = "Life in the Fast Lane"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            DiscoId = 7,
+                            TiempoDuracion = 273,
+                            TituloCancion = "I Will Always Love You"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            DiscoId = 7,
+                            TiempoDuracion = 275,
+                            TituloCancion = "I'm Every Woman"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            DiscoId = 8,
+                            TiempoDuracion = 283,
+                            TituloCancion = "Stayin' Alive"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            DiscoId = 8,
+                            TiempoDuracion = 240,
+                            TituloCancion = "How Deep Is Your Love"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            DiscoId = 9,
+                            TiempoDuracion = 259,
+                            TituloCancion = "Come Together"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            DiscoId = 9,
+                            TiempoDuracion = 182,
+                            TituloCancion = "Something"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            DiscoId = 10,
+                            TiempoDuracion = 228,
+                            TituloCancion = "Rolling in the Deep"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            DiscoId = 10,
+                            TiempoDuracion = 285,
+                            TituloCancion = "Someone Like You"
                         });
                 });
 
-            modelBuilder.Entity("Parcial2AgustinSantinaqueWebApi.Dal.Entities.Disco", b =>
+            modelBuilder.Entity("segParAgustinSantinaqueApi.Dal.Entities.Disco", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -155,10 +253,80 @@ namespace segParAgustinSantinaqueApi.Migrations
                             Nombre = "Led Zeppelin IV",
                             SKU = "GHI789",
                             UnidadesVendidas = 37000000
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Banda = "Pink Floyd",
+                            FechaLanzamiento = new DateTime(1973, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Rock",
+                            Nombre = "The Dark Side of the Moon",
+                            SKU = "JKL012",
+                            UnidadesVendidas = 45000000
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Banda = "Fleetwood Mac",
+                            FechaLanzamiento = new DateTime(1977, 2, 4, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Rock",
+                            Nombre = "Rumours",
+                            SKU = "MNO345",
+                            UnidadesVendidas = 40000000
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Banda = "Eagles",
+                            FechaLanzamiento = new DateTime(1976, 12, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Rock",
+                            Nombre = "Hotel California",
+                            SKU = "PQR678",
+                            UnidadesVendidas = 42000000
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Banda = "Whitney Houston",
+                            FechaLanzamiento = new DateTime(1992, 11, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Soundtrack",
+                            Nombre = "The Bodyguard",
+                            SKU = "STU901",
+                            UnidadesVendidas = 45000000
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Banda = "Bee Gees",
+                            FechaLanzamiento = new DateTime(1977, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Disco",
+                            Nombre = "Saturday Night Fever",
+                            SKU = "VWX234",
+                            UnidadesVendidas = 40000000
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Banda = "The Beatles",
+                            FechaLanzamiento = new DateTime(1969, 9, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Rock",
+                            Nombre = "Abbey Road",
+                            SKU = "YZA567",
+                            UnidadesVendidas = 31000000
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Banda = "Adele",
+                            FechaLanzamiento = new DateTime(2011, 1, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Genero = "Pop",
+                            Nombre = "21",
+                            SKU = "BCD890",
+                            UnidadesVendidas = 31000000
                         });
                 });
 
-            modelBuilder.Entity("Parcial2AgustinSantinaqueWebApi.Dal.Entities.Usuario", b =>
+            modelBuilder.Entity("segParAgustinSantinaqueApi.Dal.Entities.Usuario", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -205,9 +373,9 @@ namespace segParAgustinSantinaqueApi.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Parcial2AgustinSantinaqueWebApi.Dal.Entities.Cancion", b =>
+            modelBuilder.Entity("segParAgustinSantinaqueApi.Dal.Entities.Cancion", b =>
                 {
-                    b.HasOne("Parcial2AgustinSantinaqueWebApi.Dal.Entities.Disco", "Disco")
+                    b.HasOne("segParAgustinSantinaqueApi.Dal.Entities.Disco", "Disco")
                         .WithMany("Canciones")
                         .HasForeignKey("DiscoId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -216,7 +384,7 @@ namespace segParAgustinSantinaqueApi.Migrations
                     b.Navigation("Disco");
                 });
 
-            modelBuilder.Entity("Parcial2AgustinSantinaqueWebApi.Dal.Entities.Disco", b =>
+            modelBuilder.Entity("segParAgustinSantinaqueApi.Dal.Entities.Disco", b =>
                 {
                     b.Navigation("Canciones");
                 });
